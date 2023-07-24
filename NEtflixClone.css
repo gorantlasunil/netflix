@@ -1,0 +1,329 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins' sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: #ffff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./MainPageImages/background2.jpg),linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    filter:grayscale(40%);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 8%;
+    position: relative;
+
+}
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    color: #db0001;
+}
+nav button{
+    outline: 0px;
+    background: transparent;
+    height: 35px;
+    width:100px ;
+    position:relative;
+    top: -10px;
+    color: #ffff;
+    padding: 0px 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+    transition: font-size 0.5s , border 0.5s;
+    
+}
+nav button:hover{
+    border: 4px solid rgb(245, 42, 42);
+    box-shadow: 2px 2px 2px black;
+    font-size: 23px;
+}
+nav button a{
+    text-decoration: none;
+    color: #ffff;
+}
+.languagebtn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #ffff;
+    padding:7px 10px;
+    box-shadow: 3px 3px 3px black;
+     
+}
+.languagebtn img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:1px;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 600;
+    
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.email-signup{
+background: #ffff;
+border-radius: 4px;
+display: flex;
+align-items: center;
+margin-top: 30px;
+overflow: hidden;
+height: 40px;
+}
+.email-signup input{
+    flex: 1;
+    border:none;
+    font-size:20px;
+    height: 40px;
+}
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    color: #ffff;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+}
+/*........................Features..............................*/
+.features{
+ padding: 50px 12%;
+ font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+.textcol{
+   flex-basis: 50%;
+   margin-bottom: 20px;
+
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+cursor: pointer;
+
+}
+.img-col video{
+    width:24vw;
+    height:25vh;
+    position: absolute;
+    top: 800px;
+    margin-left: 97px;
+    margin-top: 130px;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+/*.....................Feaq...................*/
+
+.feaq{
+    padding: 10px 12%;
+    align-items:center;
+    font-size: 18px;
+}
+.feaq h2{
+    font-size: 40px;
+    font-weight: 500;
+    padding-left:200px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position:absolute;
+    right: 20px;
+    transition: transform 0.5s;
+    color: yellow;
+}
+input[type="radio"] /*to remove the radio button*/
+{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    border-radius: 12px;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s padding 1.5s;
+}
+/* when clickon + it shows the content inside it*/
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+    color: #db0001;
+} 
+.feaq .email-signup{
+    max-width:800px;
+    margin: 100px auto 60px;
+}
+.feaq small{
+    font-size: 20px;
+    position: absolute;
+    left: 400px;
+}
+/* .....................Footer.................*/
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis:10%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    padding: 10px 0;
+}
+.footer .languagebtn{
+    color: #ffff;
+    width: 80px;
+
+}
+.footer .languagebtn img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left:406px;   
+}
+.copyright{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*.......................media-queires for small screen.................*/
+@media only screen and (max-width:600px){
+    .logo{
+        width: 80px;
+    }
+    nav button{
+        padding: 4px 10px;
+    }
+    nav .languagebtn{
+        padding: 4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 70px;
+    }
+    .header-content h1{
+        font-size: 20px;
+    }
+    .email-signup button{
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    .textcol, .img-col{
+        flex-basis: 100%;
+    }
+    .features h2{
+        font-size: 15px;
+        padding-left: 33px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .row:nth-child(2),.row:nth-child(4)
+    {
+        flex-direction: column-reverse;
+    }
+    .features .row{
+        padding:10px 0px;
+    }
+    .feaq h2{
+        font-size: 20px;
+    }
+    .accordion .content{
+        font-size: 14px;
+    }
+    .accordion li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .footer .languagebtn img{
+         position: absolute;
+         left: 160px;
+    }
+    
+
+}

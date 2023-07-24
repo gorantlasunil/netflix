@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix SignUp</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(./Movies/banner.jpg);
+            background-size: cover;
+             opacity:30;
+             background-repeat: no-repeat;
+        }
+        .container{
+            width:30vw;
+            height:80vh;
+            max-width: 40vw;
+            position: absolute;
+            align-items: center;
+            left:35vw;
+            top:90px;
+            border-radius:10px;
+            border: 3px solid cyan;
+            box-shadow: 3px 3px 3px cyan;
+        }
+        .container .inpu{
+            background: transparent;
+            width:15vw;
+            height: 5vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content:space-around;
+            position: relative;
+            left:90px;
+            margin-top: 20px; 
+            border: 2px solid chocolate;
+            box-shadow: 3px 3px 3px chocolate;
+            color: #ffff;
+            font-size:20px ;
+
+        }
+        .container #sub{
+            width:8vw;
+            height: 5vh;
+            position: relative;
+            left:140px;
+            border-radius:10px;
+            border: 3px solid cyan;
+            box-shadow: 3px 3px 3px cyan;
+            background: transparent;
+            color: #ffff;
+            font-size: large;
+        }
+        .container h1{
+            font-size: 23px;
+            color: #ffff;
+            position: absolute;
+            right: 10px;
+        }
+        .container a{
+            text-decoration:dashed;
+            color: orange;
+        }
+        .nav_logo {
+    width:120px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .nav_avatar {
+    width: 30px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+  .nav_black {
+    background-color: #111;
+  }
+  a {
+    color:#fff;
+    text-decoration: none;
+  }
+  a:hover {
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s;
+
+  }
+   .nav-right-section,
+  .nav-left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+  }
+  .main-section {
+    position: absolute;
+    top: calc(100vh - 300px);
+  }
+  
+  .main-nav a,
+  .sub-nav a {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #ffff;
+    font-weight: 700;
+    
+  }
+  
+  .main-nav a:hover,
+  .main-nav a:focus,
+  .sub-nav a:hover,
+  .sub-nav a:focus {
+    font-size: 32px;
+    color: chocolate;
+    text-decoration: double;
+  }
+  
+  .nav-left-section {
+    gap: 25px;
+    margin-right: 20px;
+  }
+  
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .sub-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+    </style>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <div class="nav-left-section">
+          <img src="https://i.postimg.cc/fTPcTRWQ/netflix-logo.png" alt="" class="nav_logo">
+          <nav class="main-nav">                
+          <a href="./Home/index.html">Home |</a>
+          <a href="#tvShows">TV Shows |</a>
+          <a href="#movies">Movies |</a>
+          <a href="#originals">New & Popular |</a>
+          <a href="#">My List |</a>
+          <a href="#">Browse by Languages |</a>        
+        </nav>
+        </div>
+        <div class="nav-right-section">
+        <nav class="sub-nav">
+          <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+          <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+        </nav> 
+          <img src="./netflix-logo.png" alt="" class="nav_avatar">
+          </div>
+      </div>
+
+    <div class="container">
+        <form action="./NetflixClone.html">
+       <input type="text" class="inpu" placeholder="Enter The FullName"><br>
+       <input type="email" class="inpu" placeholder="Enter The Email"><br>
+       <input type="text" class="inpu" placeholder="Enter MobileNumber" minlength="10" maxlength="10"><br>
+       <input type="password" class="inpu" placeholder="Enter Password"><br>
+       <input type="password" class="inpu" placeholder="re-Enter Password"><br>
+       <input type="submit" value="SignUp" id="sub"><br><br>
+       <h1>Already Account <a href="./login.html">Login</a></h1>
+        </form>
+    </div>
+</body>
+</html>
